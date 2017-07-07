@@ -52,6 +52,22 @@ describe('axe.utils.isHidden', function () {
 		assert.isFalse(axe.utils.isHidden(el));
 	});
 
-
+	// TODO: I don't think you can stub checkHidden here
+	// it('should remember previous calculations', function () {
+	// 	var orig = checkHidden;
+	// 	var callCount = 0;
+	// 	checkHidden = function checkHidden() {
+	// 		callCount++;
+	// 		return false;
+	// 	};
+	// 	var div = document.createElement('div');
+	// 	fixture.appendChild(div);
+  //
+	// 	assert.isFalse(axe.utils.isHidden(div));
+	// 	assert.isFalse(axe.utils.isHidden(div));
+	// 	assert.isFalse(axe.utils.isHidden(div, true));
+	// 	assert.equal(callCount, 2);
+	// 	axe.commons.aria.implicitRole = orig;
+	// });
 
 });
